@@ -20,7 +20,7 @@
     <properties>
         <java.version>17</java.version>
         <spring-cloud.version>2022.0.4</spring-cloud.version>
-        <toggles.version>1.1.0</toggles.version>
+
     </properties>
 
     <dependencies>
@@ -44,14 +44,9 @@
 
         <!-- Feature Toggles -->
         <dependency>
-            <groupId>com.github.spullara.mustache.java</groupId>
-            <artifactId>compiler</artifactId>
-            <version>0.9.10</version>
-        </dependency>
-        <dependency>
-            <groupId>com.github.spullara.mustache.java</groupId>
-            <artifactId>spring-boot-starter-feature-toggles</artifactId>
-            <version>${toggles.version}</version>
+            <groupId>org.togglz</groupId>
+            <artifactId>togglz-spring-boot-starter</artifactId>
+            <version>2.9.7</version>
         </dependency>
 
         <!-- Testing -->
@@ -65,12 +60,7 @@
             <artifactId>mongodb</artifactId>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>io.k6</groupId>
-            <artifactId>k6</artifactId>
-            <version>0.46.0</version>
-            <scope>test</scope>
-        </dependency>
+
     </dependencies>
 
     <build>
